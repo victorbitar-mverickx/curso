@@ -1,0 +1,23 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: linear-gradient(to right, #040a0e,#061017,#0a1a24,#08141c);
+    color: #FFEAD0;
+}
+h1{
+    display: inline;
+}
+main > h2{
+    display: inline;
+}
+nav a{
+    display: inline;
+}
+img{
+    display: inline;
+    padding-top: 7em;
+    width: 600px;
+}
