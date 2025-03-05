@@ -1,13 +1,25 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1:  Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', sans-serif;
+    --fonte3:'Sriracha', cursive ;
+}
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 html,body{
+    font-family: var(--fonte1);
     min-height: 100vh;
     background-color: darkgrey;
 }
 header{
+    
+    font-family: var(--fonte2);
     background-color: black;
     color: white;
     text-align: center;
@@ -15,6 +27,7 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps; 
+    font-size: 4em ;
 }
 header > p{
     padding-bottom: 50px;
@@ -32,23 +45,43 @@ header a:hover, footer a:hover{
     font-size: 18px;
 }
 section{
-    line-height: 2em;
+    font-size: 10wh;
+    line-height: 2.5em;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    font-family: var(--fonte3);
+}
+section > p{
+    padding-bottom: 2em;
 }
 section.normal{
     background-color: white;
     color: black;
+    padding: 3vh;
 }
 section.imagem{
     background-color: rgb(31, 31, 31);
     color:white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.54);
+    background-attachment: fixed;
 
 }
 section.imagem > p {
-    background-color: black;
-    width: 400px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.323);
+    background-color: rgba(0, 0, 0, 0.455);
+    display: inline-block;
     padding: 3vh;
+    
+}
+section#img01{
+background-image: url('imagens/background001.jpg');
+background-position: right center;
+background-size: cover;
+}
+section#img02{
+ background-image: url('imagens/background002.jpg');
+ background-position: right center;
+ background-size: cover;
 }
 footer{
     background-color: black;
